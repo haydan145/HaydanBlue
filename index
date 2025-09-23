@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+      <h1 class="name">Your Name</h1>
+      <p class="description">
+        Hi, I’m [Your Name], a [Your Role/Interest].  
+        I enjoy building cool projects and exploring new technologies.  
+        Welcome to my profile site!
+      </p>
+      <div class="socials">
+        <a href="#">GitHub</a> |
+        <a href="#">LinkedIn</a> |
+        <a href="#">Twitter</a>
+      </div>
+    </aside>
+
+    <!-- Main content -->
+    <main class="content">
+      <h2>About Me</h2>
+      <p>
+        This is where you can add more details, such as your background,
+        skills, and projects. 
+      </p>
+      
+      <h2>Projects</h2>
+      <ul>
+        <li><a href="#">Project One</a> – Short description</li>
+        <li><a href="#">Project Two</a> – Short description</li>
+        <li><a href="#">Project Three</a> – Short description</li>
+      </ul>
+    </main>
+  </div>
+</body>
+</html>
