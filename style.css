@@ -1,0 +1,71 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Layout */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0d1117; /* dark background */
+  color: #c9d1d9;           /* light text */
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 280px;
+  background: #161b22; /* slightly lighter than background */
+  padding: 20px;
+  border-right: 2px solid #1f6feb; /* blue accent */
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #1f6feb; /* blue border */
+  margin-bottom: 15px;
+}
+
+.name {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #58a6ff; /* blue accent */
+}
+
+.description {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.socials a {
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+.socials a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+.content {
+  flex: 1;
+  padding: 40px;
+}
+
+h2 {
+  color: #58a6ff;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: square;
+  margin-left: 20px;
+  line-height: 1.6;
+}
