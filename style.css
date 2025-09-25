@@ -78,4 +78,60 @@ ul {
   border: 2px solid #1f6feb;
   border-radius: 8px;
 }
+/* Calendar styles */
+.calendar {
+  margin: 30px auto;
+  max-width: 800px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.day {
+  border: 1px solid #1f6feb;
+  padding: 10px;
+  min-height: 80px;
+  font-size: 0.9rem;
+  background: #161b22;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.day.header {
+  background: #1f6feb;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+/* Calendar styles */
+.calendar {
+  margin: 30px auto;
+  max-width: 800px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.day {
+  border: 1px solid #1f6feb;
+  padding: 10px;
+  min-height: 80px;
+  font-size: 0.9rem;
+  background: #161b22;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.day.header {
+  background: #1f6feb;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
 
