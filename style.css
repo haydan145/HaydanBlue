@@ -3,12 +3,13 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #f9f9f9; /* light background */
-  color: #001f3f; /* navy accent for text */
+  color: #001f3f; /* navy for text */
 }
 
 a {
   color: #001f3f;
   text-decoration: none;
+  font-weight: bold;
 }
 
 a:hover {
@@ -21,7 +22,7 @@ header {
   align-items: center;
   padding: 20px 40px;
   background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-bottom: 4px solid #001f3f; /* navy accent */
 }
 
 header img {
@@ -30,24 +31,23 @@ header img {
   border-radius: 50%;
   margin-right: 20px;
   object-fit: cover;
+  border: 2px solid #001f3f; /* navy border around profile pic */
 }
 
 header h1 {
   font-size: 2rem;
   margin: 0;
+  color: #001f3f; /* navy text */
 }
 
-/* Section Styles */
-section {
-  padding: 40px;
-}
-
+/* Section Titles */
 h2 {
   margin-top: 0;
   margin-bottom: 20px;
-  border-bottom: 2px solid #001f3f;
+  border-bottom: 3px solid #001f3f; /* navy accent */
   display: inline-block;
   padding-bottom: 5px;
+  color: #001f3f;
 }
 
 /* Projects Grid */
@@ -59,7 +59,7 @@ h2 {
 
 .project-card {
   background-color: #ffffff;
-  border: 1px solid #001f3f;
+  border: 2px solid #001f3f; /* navy border */
   border-radius: 10px;
   padding: 20px;
   text-align: center;
@@ -68,13 +68,13 @@ h2 {
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
 .project-card a {
   display: block;
   margin-top: 10px;
-  font-weight: bold;
+  color: #001f3f;
 }
 
 /* Footer / Blank Section */
@@ -82,5 +82,5 @@ footer {
   background-color: #ffffff;
   padding: 40px;
   text-align: center;
-  border-top: 2px solid #001f3f;
+  border-top: 3px solid #001f3f; /* navy accent */
 }
