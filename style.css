@@ -1,137 +1,42 @@
-/* General reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haydan DeBonis - GitHub Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-/* Layout */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #0d1117; /* dark background */
-  color: #c9d1d9;           /* light text */
-}
+  <!-- Header -->
+  <header>
+    <img src="https://via.placeholder.com/80" alt="Haydan DeBonis Profile Picture">
+    <h1>Haydan DeBonis</h1>
+  </header>
 
-.container {
-  display: flex;
-  min-height: 100vh;
-}
+  <!-- Projects Section -->
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <p>Project 1</p>
+        <a href="https://githubusername.github.io/page1" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <p>Project 2</p>
+        <a href="https://githubusername.github.io/page2" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <p>Project 3</p>
+        <a href="https://githubusername.github.io/page3" target="_blank">View Project</a>
+      </div>
+    </div>
+  </section>
 
-/* Sidebar */
-.sidebar {
-  width: 280px;
-  background: #161b22; /* slightly lighter than background */
-  padding: 20px;
-  border-right: 2px solid #1f6feb; /* blue accent */
-}
+  <!-- Blank Section -->
+  <footer>
+    <!-- Reserved for future content -->
+  </footer>
 
-.profile-pic {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  border: 3px solid #1f6feb; /* blue border */
-  margin-bottom: 15px;
-}
-
-.name {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #58a6ff; /* blue accent */
-}
-
-.description {
-  margin-bottom: 20px;
-  line-height: 1.5;
-}
-
-.socials a {
-  color: #58a6ff;
-  text-decoration: none;
-}
-
-.socials a:hover {
-  text-decoration: underline;
-}
-
-/* Main Content */
-.content {
-  flex: 1;
-  padding: 40px;
-}
-
-h2 {
-  color: #58a6ff;
-  margin-bottom: 10px;
-}
-
-ul {
-  list-style: square;
-  margin-left: 20px;
-  line-height: 1.6;
-}
-/* existing styles above */
-
-#flappyGame {
-  display: block;
-  margin: 20px auto;
-  background: #0d1117; /* dark bg */
-  border: 2px solid #1f6feb;
-  border-radius: 8px;
-}
-/* Calendar styles */
-.calendar {
-  margin: 30px auto;
-  max-width: 800px;
-}
-
-.calendar-grid {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 5px;
-}
-
-.day {
-  border: 1px solid #1f6feb;
-  padding: 10px;
-  min-height: 80px;
-  font-size: 0.9rem;
-  background: #161b22;
-  border-radius: 6px;
-  overflow: hidden;
-}
-
-.day.header {
-  background: #1f6feb;
-  color: white;
-  font-weight: bold;
-  text-align: center;
-}
-/* Calendar styles */
-.calendar {
-  margin: 30px auto;
-  max-width: 800px;
-}
-
-.calendar-grid {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 5px;
-}
-
-.day {
-  border: 1px solid #1f6feb;
-  padding: 10px;
-  min-height: 80px;
-  font-size: 0.9rem;
-  background: #161b22;
-  border-radius: 6px;
-  overflow: hidden;
-}
-
-.day.header {
-  background: #1f6feb;
-  color: white;
-  font-weight: bold;
-  text-align: center;
-}
-
+</body>
+</html>
