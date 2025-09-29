@@ -50,31 +50,49 @@ h2 {
   color: #001f3f;
 }
 
-/* Projects Grid */
-.projects {
+/* Games Grid */
+.games {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
 }
 
-.project-card {
+.game-card {
   background-color: #ffffff;
   border: 2px solid #001f3f; /* navy border */
   border-radius: 10px;
-  padding: 20px;
+  padding: 30px 20px;
   text-align: center;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+  cursor: pointer;
 }
 
-.project-card:hover {
+.game-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  background-color: #f0f4ff; /* subtle navy tint */
 }
 
-.project-card a {
-  display: block;
-  margin-top: 10px;
+.game-card p {
+  font-size: 1.2rem;
+  margin: 0;
   color: #001f3f;
+}
+
+.game-card a {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background-color: #001f3f;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.game-card a:hover {
+  background-color: #003366; /* darker navy on hover */
 }
 
 /* Footer / Blank Section */
