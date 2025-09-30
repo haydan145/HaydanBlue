@@ -15,14 +15,28 @@
       align-items: center;
       justify-content: center;
     }
+    h1 {
+      color: white;
+      margin: 10px 0 0;
+    }
+    p.instructions {
+      color: #bbb;
+      font-size: 14px;
+      margin: 5px 0 15px;
+      font-style: italic;
+    }
     iframe {
-      width: 90%;
+      width: 95%;
       height: 80%;
       border: none;
       border-radius: 10px;
     }
-    button {
+    .button-container {
+      display: flex;
+      gap: 15px;
       margin-top: 10px;
+    }
+    button {
       padding: 10px 20px;
       font-size: 16px;
       border: none;
@@ -45,9 +59,16 @@
   </style>
 </head>
 <body>
-  <h1 style="color:white;">Highway Traffic</h1>
+  <h1>Highway Traffic</h1>
+  <p class="instructions">Tip: Click outside the game, then press the <code>~</code>/<code>`</code> key to black out the screen.</p>
+
   <iframe src="https://www.onlinegames.io/games/2022/unity/highway-traffic/index.html" allowfullscreen></iframe>
-  <button onclick="toggleFullscreen()">Go Fullscreen</button>
+
+  <div class="button-container">
+    <button onclick="toggleFullscreen()">Go Fullscreen</button>
+    <button onclick="goHome()">Back to Home</button>
+  </div>
+
   <div id="blackout"></div>
 
   <script>
@@ -60,6 +81,10 @@
       } else if (iframe.msRequestFullscreen) {
         iframe.msRequestFullscreen();
       }
+    }
+
+    function goHome() {
+      window.location.href = "index.html";
     }
 
     document.addEventListener("keydown", (e) => {
