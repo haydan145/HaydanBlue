@@ -3,56 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Haydan DeBonis</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Haydan DeBonis - Games</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #222;
+    }
+    header {
+      background-color: navy;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .games-section {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px;
+      flex-wrap: wrap;
+    }
+    .game-card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    .game-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .game-card h3 {
+      margin: 10px 0;
+    }
+    .game-card button {
+      background: navy;
+      color: white;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .game-card button:hover {
+      background: #002966;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
     <h1>Haydan DeBonis</h1>
+    <p>My Games</p>
   </header>
 
-  <section class="games">
-    <h2>My Games</h2>
-    <div class="tiles">
-      <!-- Game 1 -->
-      <div class="card">
-        <img src="images/game1.jpg" alt="Highway Traffic">
-        <h3>Highway Traffic</h3>
-        <a href="page1/index.html" class="btn">Play Now</a>
-      </div>
+  <section class="games-section">
+    <div class="game-card">
+      <img src="https://img.icons8.com/?size=512&id=108646&format=png" alt="Highway Traffic">
+      <h3>Highway Traffic</h3>
+      <button onclick="location.href='page1.html'">Play</button>
+    </div>
 
-      <!-- Game 2 -->
-      <div class="card">
-        <img src="images/game2.jpg" alt="Geometry Dash">
-        <h3>Geometry Dash</h3>
-        <a href="page2/index.html" class="btn">Play Now</a>
-      </div>
+    <div class="game-card">
+      <img src="https://img.icons8.com/?size=512&id=14754&format=png" alt="Geometry Dash">
+      <h3>Geometry Dash</h3>
+      <button onclick="location.href='page2.html'">Play</button>
+    </div>
 
-      <!-- Game 3 -->
-      <div class="card">
-        <img src="images/game3.jpg" alt="Game 3 Coming Soon">
-        <h3>Game 3</h3>
-        <a href="page3/index.html" class="btn">Play Now</a>
-      </div>
+    <div class="game-card">
+      <img src="https://img.icons8.com/?size=512&id=5rKJTR9EjP88&format=png" alt="Coming Soon">
+      <h3>Coming Soon</h3>
+      <button disabled>Not Ready</button>
     </div>
   </section>
-
-  <section class="blank">
-    <h2>Coming Soon</h2>
-  </section>
-
-  <!-- Blackout overlay -->
-  <div id="blackout"></div>
-
-  <script>
-    // Blackout toggle with backtick key `
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "`") {
-        const blackout = document.getElementById("blackout");
-        blackout.style.display = blackout.style.display === "none" ? "block" : "none";
-      }
-    });
-  </script>
 </body>
 </html>
