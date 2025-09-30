@@ -8,76 +8,72 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
-      color: #222;
+      background: #f9f9f9;
+      color: #333;
     }
     header {
-      background-color: navy;
+      background: navy;
       color: white;
       padding: 20px;
       text-align: center;
     }
-    .games-section {
+    .games {
       display: flex;
       justify-content: center;
       gap: 20px;
       padding: 40px;
       flex-wrap: wrap;
     }
-    .game-card {
+    .card {
       background: white;
-      border: 1px solid #ddd;
       border-radius: 10px;
-      width: 260px;
-      text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
       overflow: hidden;
+      width: 300px;
+      text-align: center;
     }
-    .game-card img {
+    .card img {
       width: 100%;
-      height: 160px;
+      height: 180px;
       object-fit: cover;
     }
-    .game-card h3 {
+    .card h3 {
       margin: 10px 0;
     }
-    .game-card button {
+    .card a {
+      display: block;
+      margin: 10px;
+      padding: 10px;
       background: navy;
       color: white;
-      border: none;
-      padding: 10px;
-      width: 100%;
-      cursor: pointer;
-      font-size: 16px;
+      text-decoration: none;
+      border-radius: 6px;
     }
-    .game-card button:hover {
-      background: #002966;
+    .card a:hover {
+      background: #001f5c;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Haydan DeBonis</h1>
-    <p>My Games</p>
+    <h1>Haydan DeBonis - Game Hub</h1>
   </header>
 
-  <section class="games-section">
-    <div class="game-card">
-      <img src="https://www.onlinegames.io/games/2022/unity/highway-traffic/highway-traffic.jpg" alt="Highway Traffic">
+  <section class="games">
+    <div class="card">
+      <img src="https://img.onlinegames.io/2022/11/highway-traffic.jpg" alt="Highway Traffic">
       <h3>Highway Traffic</h3>
-      <button onclick="location.href='page1.html'">Play</button>
+      <a href="page1.html">Play</a>
     </div>
-
-    <div class="game-card">
-      <img src="https://www.onlinegames.io/games/2023/q2/geometry-dash-freezenova/geometry-dash-freezenova.jpg" alt="Geometry Dash">
+    <div class="card">
+      <img src="https://img.onlinegames.io/2023/05/geometry-dash-freezenova.jpg" alt="Geometry Dash">
       <h3>Geometry Dash</h3>
-      <button onclick="location.href='page2.html'">Play</button>
+      <a href="page2.html">Play</a>
     </div>
-
-    <div class="game-card">
-      <img src="https://img.icons8.com/?size=512&id=5rKJTR9EjP88&format=png" alt="Coming Soon">
-      <h3>Coming Soon</h3>
-      <button disabled>Not Ready</button>
+    <div class="card">
+      <img src="https://img.onlinegames.io/2023/01/subway-surfers.jpg" alt="Subway Surfers">
+      <h3>Subway Surfers</h3>
+      <a href="page3.html">Play</a>
     </div>
   </section>
 </body>
