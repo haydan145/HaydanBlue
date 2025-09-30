@@ -9,36 +9,34 @@
       margin: 0;
       padding: 0;
       height: 100%;
-      background-color: #0a0a0a;
       display: flex;
       flex-direction: column;
-      align-items: center;
-    }
-    h1 {
+      background: #0a0a0a;
       color: white;
-      margin: 15px 0 5px;
+      font-family: Arial, sans-serif;
     }
-    p.instructions {
-      color: #bbb;
-      font-size: 14px;
-      margin: 0 0 15px;
-      font-style: italic;
+    header {
+      text-align: center;
+      padding: 10px;
+    }
+    .instructions {
+      font-size: 12px;
+      text-align: center;
+      margin-bottom: 5px;
     }
     iframe {
-      width: 98%;
-      height: 80vh;
+      flex: 1;
+      width: 100%;
       border: none;
-      border-radius: 10px;
-      flex-grow: 1;
     }
     .button-container {
       display: flex;
+      justify-content: center;
       gap: 15px;
-      margin: 10px 0 20px;
+      padding: 10px;
     }
     button {
       padding: 10px 20px;
-      font-size: 16px;
       border: none;
       border-radius: 6px;
       background: navy;
@@ -59,13 +57,15 @@
   </style>
 </head>
 <body>
-  <h1>Highway Traffic</h1>
-  <p class="instructions">Tip: Click outside the game, then press the <code>~</code>/<code>`</code> key to black out the screen.</p>
+  <header>
+    <h1>Highway Traffic</h1>
+    <p class="instructions">(Click off the game, then press the ` key to black out the screen)</p>
+  </header>
 
   <iframe src="https://www.onlinegames.io/games/2022/unity/highway-traffic/index.html" allowfullscreen></iframe>
 
   <div class="button-container">
-    <button onclick="toggleFullscreen()">Go Fullscreen</button>
+    <button onclick="toggleFullscreen()">Fullscreen</button>
     <button onclick="goHome()">Back to Home</button>
   </div>
 
@@ -74,19 +74,11 @@
   <script>
     function toggleFullscreen() {
       const iframe = document.querySelector("iframe");
-      if (iframe.requestFullscreen) {
-        iframe.requestFullscreen();
-      } else if (iframe.webkitRequestFullscreen) {
-        iframe.webkitRequestFullscreen();
-      } else if (iframe.msRequestFullscreen) {
-        iframe.msRequestFullscreen();
-      }
+      if (iframe.requestFullscreen) iframe.requestFullscreen();
     }
-
     function goHome() {
       window.location.href = "index.html";
     }
-
     document.addEventListener("keydown", (e) => {
       if (e.key === "`") {
         const blackout = document.getElementById("blackout");
