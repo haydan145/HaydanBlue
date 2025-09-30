@@ -1,1 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geometry Dash</title>
+  <style>
+    body {
+      margin: 0;
+      background: #111;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      height: 100vh;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      padding: 10px;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    iframe {
+      width: 80%;
+      height: 70vh;
+      border: none;
+      background: black;
+    }
+
+    .controls {
+      margin: 10px;
+    }
+
+    .fullscreen-btn {
+      padding: 8px 16px;
+      font-size: 1rem;
+      cursor: pointer;
+      background: navy;
+      color: white;
+      border: none;
+      border-radius: 6px;
+    }
+
+    #blackout {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: black;
+      display: none;
+      z-index: 9999;
+    }
+  </style>
+</head>
+<body>
+  <header>🎮 Geometry Dash</header>
+
+  <div class="controls">
+    <button class="fullscreen-btn" onclick="toggleFullscreen()">Toggle Fullscreen</button>
+  </div>
+
+  <iframe id="gameFrame" src="https://www.onlinegames.io/games/2023/q2/geometry-dash-freezenova/index.html"></iframe>
+
+  <!-- Blackout overlay -->
+  <div id="blackout"></div>
+
+  <script>
+    function toggleFullscreen() {
+      const iframe = document.getElementById("gameFrame");
+      if (iframe.requestFullscreen) {
+        iframe.requestFullscreen();
+      } else if (iframe.webkitRequestFullscreen) {
+        iframe.webkitRequestFullscreen();
+      } else if (iframe.msRequestFullscreen) {
+        iframe.msRequestFullscreen();
+      }
+    }
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "`") {
+        const blackout = document.getElementById("blackout");
+        blackout.style.display = blackout.style.display === "none" ? "block" : "none";
+      }
+    });
+  </script>
+</body>
+</html>
 
